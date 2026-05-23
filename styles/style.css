@@ -7,4 +7,111 @@
   background-size: cover;
   background-attachment: fixed;
   background-color: var(--background-color);
+  font-family: var(--main-font-family);
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  height: 100vh;
+  min-height: var(--header-min-height);
+  position: relative;
+  margin: 10px;
+}
+
+.header__theme-menu {
+  justify-self: end;
+  /* margin-top: 65px; */
+}
+
+.header__theme-menu-list {
+  display: grid;
+  gap: 10px;
+}
+
+.header__theme-menu-button {
+  font-family: var(--main-font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  text-align: center;
+  color: var(--accent-color);
+  border: none;
+  background-color: transparent;
+  text-transform: lowercase;
+  padding: 0px 13px;
+  width: 70px;
+  height: 26px;
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--accent-color);
+}
+
+.header__lamp-text {
+  position: absolute;
+  top: 0px;
+  right: 28px;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 139%;
+  text-align: center;
+  color: var(--accent-color);
+}
+
+.header__lamp-text::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: -19px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: currentColor;
+  box-shadow: 0 0 4px 2px currentColor;
+}
+
+.decorated-zone::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border-right: var(--corner-border);
+  border-top: var(--corner-border);
+  width: 25px;
+  height: 24px;
+}
+
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  border-bottom: var(--corner-border);
+  border-left: var(--corner-border);
+  width: 25px;
+  height: 25px;
+}
+
+.title {
+  font-family: var(--main-font-family);
+  font-weight: 700;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 83%;
+  color: var(--title-color);
+  text-shadow: 4px 4px 0 var(--accent-color);
+  align-self: center;
+}
+
+.title-decor {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+  color: #000028;
+  background: var(--accent-color);
+  min-width: 355px;
+  height: 117px;
 }

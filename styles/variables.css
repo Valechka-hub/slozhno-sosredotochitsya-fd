@@ -6,4 +6,10 @@
 :root {
   --background-image: url(../images/cover-image-dark.png);
   --background-color: #000028;
+
+  --header-min-height: 668px;
+  --main-font-family: 'IBM Plex mono', sans-serif;
+  --accent-color: #ff0070;
+  --corner-border: 1px solid var(--accent-color);
+  --title-color: #db00ff;
 }
