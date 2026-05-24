@@ -12,22 +12,22 @@
 
 .header {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-rows: 1fr min-content 1fr;
+  align-items: center;
   justify-items: center;
   height: 100vh;
   min-height: var(--header-min-height);
   position: relative;
-  margin: 10px;
+  padding: var(--gap);
 }
 
 .header__theme-menu {
   justify-self: end;
-  /* margin-top: 65px; */
 }
 
 .header__theme-menu-list {
   display: grid;
-  gap: 10px;
+  gap: var(--gap);
 }
 
 .header__theme-menu-button {
@@ -51,8 +51,8 @@
 
 .header__lamp-text {
   position: absolute;
-  top: 0px;
-  right: 28px;
+  top: var(--gap);
+  right: 38px;
   font-family: inherit;
   font-weight: 400;
   font-size: 18px;
@@ -76,8 +76,8 @@
 .decorated-zone::before {
   content: "";
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: var(--gap);
+  right: var(--gap);
   border-right: var(--corner-border);
   border-top: var(--corner-border);
   width: 25px;
@@ -87,8 +87,8 @@
 .decorated-zone::after {
   content: "";
   position: absolute;
-  left: 0px;
-  bottom: 0px;
+  left: var(--gap);
+  bottom: var(--gap);
   border-bottom: var(--corner-border);
   border-left: var(--corner-border);
   width: 25px;
@@ -112,6 +112,5 @@
   line-height: 130%;
   color: #000028;
   background: var(--accent-color);
-  min-width: 355px;
   height: 117px;
 }
