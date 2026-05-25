@@ -45,6 +45,15 @@
   height: 26px;
 }
 
+.header__theme-menu-button:hover {
+  border: 1px solid var(--accent-color-hover);
+}
+
+.header__theme-menu-button:focus-visible {
+  outline: none;
+  border-bottom: 1px solid var(--accent-color);
+}
+
 .header__theme-menu-button_active {
   border: 1px solid var(--accent-color);
 }
@@ -140,6 +149,15 @@
 .link {
   text-decoration: none;
   text-shadow: 2px 2px 0 var(--accent-color);
+}
+
+.link:hover {
+  border-bottom: 1px solid currentColor;
+}
+
+.link:focus-visible {
+  outline: none;
+  border: 1px solid currentColor;
 }
 
 .section__title {
