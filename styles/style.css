@@ -106,11 +106,80 @@
 }
 
 .title-decor {
-  font-family: var(--font-family);
+  font-family: var(--main-font-family);
   font-weight: 700;
   font-size: 18px;
   line-height: 130%;
-  color: #000028;
+  color: var(--background-color);
   background: var(--accent-color);
   height: 117px;
+}
+
+.main {
+  margin-top: 40px;
+  padding: 0px var(--gap);
+  display: grid;
+  gap: 50px;
+}
+
+.section {
+  display: grid;
+  gap: 20px;
+}
+
+.section__card-list {
+  display: grid;
+  gap: 20px;
+}
+
+.card {
+  display: grid;
+  gap: var(--gap);
+}
+
+.link {
+  text-decoration: none;
+  text-shadow: 2px 2px 0 var(--accent-color);
+}
+
+.section__title {
+  font-family: var(--main-font-family);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+  color: var(--accent-color);
+}
+
+.card__title {
+  color: var(--background-color);
+  height: 23px;
+}
+
+.card__subtitle {
+  font-weight: 400;
+}
+
+.card__text {
+  font-family: var(--main-font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  color: var(--card-text-color);
+}
+
+.section__recommendations > h3 {
+  height: 47px;
+}
+
+.card__image {
+  inline-size: 100%;
+  block-size: 100%;
+}
+
+.section__images {
+  gap: var(--gap);
+}
+
+.section__images .section__card-list {
+  gap: var(--gap);
 }
