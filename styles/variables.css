@@ -16,4 +16,9 @@
   --main-font-family: 'IBM Plex mono', sans-serif;
   --corner-border: 1px solid var(--accent-color);
   --gap: 10px;
+  --regular-font-weight: 400;
+  --bold-font-weight: 700;
+  --main-font-size: 18px;
+  --decore-size: 25px;
+  --title-line-height: 130%;
 }

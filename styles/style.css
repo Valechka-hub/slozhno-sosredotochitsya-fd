@@ -32,8 +32,8 @@
 
 .header__theme-menu-button {
   font-family: var(--main-font-family);
-  font-weight: 400;
-  font-size: 18px;
+  font-weight: var(--regular-font-weight);
+  font-size: var(--main-font-size);
   line-height: 100%;
   text-align: center;
   color: var(--accent-color);
@@ -63,8 +63,8 @@
   top: var(--gap);
   right: 38px;
   font-family: inherit;
-  font-weight: 400;
-  font-size: 18px;
+  font-weight: var(--regular-font-weight);
+  font-size: var(--main-font-size);;
   line-height: 139%;
   text-align: center;
   color: var(--accent-color);
@@ -89,8 +89,8 @@
   right: var(--gap);
   border-right: var(--corner-border);
   border-top: var(--corner-border);
-  width: 25px;
-  height: 24px;
+  width: var(--decore-size);
+  height: var(--decore-size);
 }
 
 .decorated-zone::after {
@@ -100,13 +100,13 @@
   bottom: var(--gap);
   border-bottom: var(--corner-border);
   border-left: var(--corner-border);
-  width: 25px;
-  height: 25px;
+  width: var(--decore-size);
+  height: var(--decore-size);
 }
 
 .title {
   font-family: var(--main-font-family);
-  font-weight: 700;
+  font-weight: var(--bold-font-weight);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 83%;
   color: var(--title-color);
@@ -116,9 +116,9 @@
 
 .title-decor {
   font-family: var(--main-font-family);
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 130%;
+  font-weight: var(--bold-font-weight);;
+  font-size: var(--main-font-size);
+  line-height:  var(--title-line-height);
   color: var(--background-color);
   background: var(--accent-color);
   height: 117px;
@@ -162,9 +162,9 @@
 
 .section__title {
   font-family: var(--main-font-family);
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 130%;
+  font-weight: var(--bold-font-weight);;
+  font-size: var(--main-font-size);
+  line-height: var(--title-line-height);
   color: var(--accent-color);
 }
 
@@ -174,14 +174,14 @@
 }
 
 .card__subtitle {
-  font-weight: 400;
+  font-weight: var(--regular-font-weight);
 }
 
 .card__text {
   font-family: var(--main-font-family);
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 130%;
+  font-weight: var(--regular-font-weight);
+  font-size: var(--main-font-size);
+  line-height:  var(--title-line-height);
   color: var(--card-text-color);
 }
 
