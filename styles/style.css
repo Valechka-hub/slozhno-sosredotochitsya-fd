@@ -189,7 +189,7 @@
   height: 47px;
 }
 
-.card__image {
+.gallery__image {
   inline-size: 100%;
   block-size: 100%;
 }
@@ -198,6 +198,7 @@
   gap: var(--gap);
 }
 
-.section__images .section__card-list {
+.gallery {
+  display: grid;
   gap: var(--gap);
 }
