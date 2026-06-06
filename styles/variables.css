@@ -12,7 +12,7 @@
   --title-color: #db00ff;
   --card-text-color: #f1b2ce;
 
-  --header-min-height: 668px;
+  --section-min-height: 668px;
   --main-font-family: 'IBM Plex mono', sans-serif;
   --corner-border: 1px solid var(--accent-color);
   --gap: 10px;

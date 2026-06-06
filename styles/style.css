@@ -16,7 +16,7 @@
   align-items: center;
   justify-items: center;
   height: 100vh;
-  min-height: var(--header-min-height);
+  min-height: var(--section-min-height);
   position: relative;
   padding: var(--gap);
 }
@@ -201,4 +201,18 @@
 .gallery {
   display: grid;
   gap: var(--gap);
+}
+
+.footer {
+  height: 100vh;
+  min-height: var(--section-min-height);
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  position: relative;
+  margin-top: 40px;
+}
+
+.footer .title {
+  text-shadow: 2px 2px 0 var(--accent-color);
 }
