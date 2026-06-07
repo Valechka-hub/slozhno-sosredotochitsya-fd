@@ -13,6 +13,8 @@
   --card-text-color: #f1b2ce;
 
   --section-min-height: 668px;
+  --section-margin-top: 40px;
+  --section-gap: 50px;
   --main-font-family: 'IBM Plex mono', sans-serif;
   --corner-border: 1px solid var(--accent-color);
   --gap: 10px;
