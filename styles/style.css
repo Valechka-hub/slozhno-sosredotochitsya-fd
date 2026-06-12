@@ -36,7 +36,7 @@
   font-size: var(--main-font-size);
   line-height: 100%;
   text-align: center;
-  color: var(--accent-color);
+  color: var(--decor-color);
   border: none;
   background-color: transparent;
   text-transform: lowercase;
@@ -51,11 +51,11 @@
 
 .header__theme-menu-button:focus-visible {
   outline: none;
-  border-bottom: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--decor-color);
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid var(--accent-color);
+  border: 1px solid var(--decor-color);
 }
 
 .header__lamp-text {
@@ -67,7 +67,7 @@
   font-size: var(--main-font-size);;
   line-height: 139%;
   text-align: center;
-  color: var(--accent-color);
+  color: var(--decor-color);
 }
 
 .header__lamp-text::after {
@@ -119,7 +119,7 @@
   font-weight: var(--bold-font-weight);;
   font-size: var(--main-font-size);
   line-height:  var(--title-line-height);
-  color: var(--background-color);
+  color: var(--title-decor-color);
   background: var(--accent-color);
   height: 117px;
 }
@@ -165,11 +165,10 @@
   font-weight: var(--bold-font-weight);;
   font-size: var(--main-font-size);
   line-height: var(--title-line-height);
-  color: var(--accent-color);
+  color: var(--section-title-color);
 }
 
 .card__title {
-  color: var(--background-color);
   height: 23px;
 }
 
@@ -223,6 +222,14 @@
   text-shadow: 2px 2px 0 var(--accent-color);
 }
 
+.theme-dark .header__lamp-text {
+  display: block;
+}
+
+.theme-light .header__lamp-text {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .title {
     justify-self: start;
@@ -272,7 +279,7 @@
     min-height: 23px;
   }
 
-  .section__images .section__title, .section__images .gallery {
+  .section__images .title-decor, .section__images .gallery {
     grid-column: 1 / -1;
   }
 
@@ -353,4 +360,4 @@
   .footer {
     --section-min-height: 768px;
   }
-} 
+}
