@@ -1,5 +1,3 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
   background-image: var(--background-image);
   background-position: center;
@@ -228,6 +226,10 @@
 
 .theme-light .header__lamp-text {
   display: none;
+}
+
+.header__theme-menu-button_active {
+  pointer-events: none;
 }
 
 @media (min-width: 768px) {
