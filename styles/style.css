@@ -1,21 +1,21 @@
 .page {
+  font-family: var(--main-font-family);
+  background-color: var(--background-color);
   background-image: var(--background-image);
-  background-position: center;
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  background-color: var(--background-color);
-  font-family: var(--main-font-family);
 }
 
 .header {
+  position: relative;
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
-  align-items: center;
   justify-items: center;
+  align-items: center;
   height: 100vh;
   min-height: var(--section-min-height);
-  position: relative;
   padding: var(--gap);
 }
 
@@ -29,18 +29,18 @@
 }
 
 .header__theme-menu-button {
+  width: 70px;
+  height: 26px;
+  border: none;
+  padding: 0px 13px;
+  color: var(--decor-color);
   font-family: var(--main-font-family);
   font-weight: var(--regular-font-weight);
   font-size: var(--main-font-size);
   line-height: 100%;
   text-align: center;
-  color: var(--decor-color);
-  border: none;
-  background-color: transparent;
   text-transform: lowercase;
-  padding: 0px 13px;
-  width: 70px;
-  height: 26px;
+  background-color: transparent;
 }
 
 .header__theme-menu-button:hover {
@@ -48,8 +48,8 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  outline: none;
   border-bottom: 1px solid var(--decor-color);
+  outline: none;
 }
 
 .header__theme-menu-button_active {
@@ -60,12 +60,12 @@
   position: absolute;
   top: var(--gap);
   right: 38px;
+  color: var(--decor-color);
   font-family: inherit;
   font-weight: var(--regular-font-weight);
-  font-size: var(--main-font-size);;
+  font-size: var(--main-font-size);
   line-height: 139%;
   text-align: center;
-  color: var(--decor-color);
 }
 
 .header__lamp-text::after {
@@ -76,8 +76,8 @@
   width: 9px;
   height: 9px;
   border-radius: 50%;
-  background: currentColor;
   box-shadow: 0 0 4px 2px currentColor;
+  background: currentColor;
 }
 
 .decorated-zone::before {
@@ -85,48 +85,48 @@
   position: absolute;
   top: var(--gap);
   right: var(--gap);
-  border-right: var(--corner-border);
-  border-top: var(--corner-border);
   width: var(--decore-size);
   height: var(--decore-size);
+  border-top: var(--corner-border);
+  border-right: var(--corner-border);
 }
 
 .decorated-zone::after {
   content: "";
   position: absolute;
-  left: var(--gap);
   bottom: var(--gap);
-  border-bottom: var(--corner-border);
-  border-left: var(--corner-border);
+  left: var(--gap);
   width: var(--decore-size);
   height: var(--decore-size);
+  border-bottom: var(--corner-border);
+  border-left: var(--corner-border);
 }
 
 .title {
+  align-self: center;
+  color: var(--title-color);
   font-family: var(--main-font-family);
   font-weight: var(--bold-font-weight);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 83%;
-  color: var(--title-color);
   text-shadow: 4px 4px 0 var(--accent-color);
-  align-self: center;
 }
 
 .title-decor {
-  font-family: var(--main-font-family);
-  font-weight: var(--bold-font-weight);;
-  font-size: var(--main-font-size);
-  line-height:  var(--title-line-height);
-  color: var(--title-decor-color);
-  background: var(--accent-color);
   height: 117px;
+  color: var(--title-decor-color);
+  font-family: var(--main-font-family);
+  font-weight: var(--bold-font-weight);
+  font-size: var(--main-font-size);
+  line-height: var(--title-line-height);
+  background: var(--accent-color);
 }
 
 .main {
-  margin-top: var(--section-margin-top);
-  padding: 0px var(--gap);
   display: grid;
   gap: var(--section-gap);
+  margin-top: var(--section-margin-top);
+  padding: 0px var(--gap);
 }
 
 .section {
@@ -154,16 +154,16 @@
 }
 
 .link:focus-visible {
-  outline: none;
   border: 1px solid currentColor;
+  outline: none;
 }
 
 .section__title {
+  color: var(--section-title-color);
   font-family: var(--main-font-family);
-  font-weight: var(--bold-font-weight);;
+  font-weight: var(--bold-font-weight);
   font-size: var(--main-font-size);
   line-height: var(--title-line-height);
-  color: var(--section-title-color);
 }
 
 .card__title {
@@ -175,11 +175,11 @@
 }
 
 .card__text {
+  color: var(--card-text-color);
   font-family: var(--main-font-family);
   font-weight: var(--regular-font-weight);
   font-size: var(--main-font-size);
-  line-height:  var(--title-line-height);
-  color: var(--card-text-color);
+  line-height: var(--title-line-height);
 }
 
 .text-blocks > h3 {
@@ -192,9 +192,9 @@
 }
 
 .gallery__image {
+  object-fit: cover;
   inline-size: 100%;
   block-size: 100%;
-  object-fit: cover;
 }
 
 .section__images {
@@ -207,12 +207,12 @@
 }
 
 .footer {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  align-items: center;
   height: 100vh;
   min-height: var(--section-min-height);
-  display: grid;
-  align-items: center;
-  justify-items: center;
-  position: relative;
   margin-top: var(--section-margin-top);
 }
 
@@ -234,10 +234,10 @@
 
 @media (min-width: 768px) {
   .title {
+    position: relative;
+    left: calc(var(--gap) * -1);
     justify-self: start;
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    left: calc(var(--gap) * -1);
-    position: relative;
   }
 
   .header {
@@ -254,14 +254,14 @@
   }
 
   .header .title-decor {
-    max-width: 364px;
     justify-self: end;
+    max-width: 364px;
   }
 
   .main {
     --section-margin-top: 60px;
-    padding: 0px 20px;
     --section-gap: 80px;
+    padding: 0px 20px;
   }
 
   .section {
@@ -281,7 +281,8 @@
     min-height: 23px;
   }
 
-  .section__images .title-decor, .section__images .gallery {
+  .section__images .title-decor,
+  .section__images .gallery {
     grid-column: 1 / -1;
   }
 
@@ -294,23 +295,23 @@
   }
 
   .sunset_image {
-    grid-row: 1;
     grid-column: 1 / 3;
+    grid-row: 1;
   }
 
   .ice-cream_image {
-    grid-row: 1 / 3;
     grid-column: 3;
+    grid-row: 1 / 3;
   }
 
   .tape_image {
-    grid-row: 2 / 4;
     grid-column: 1;
+    grid-row: 2 / 4;
   }
 
   .street_image {
-    grid-row: 3;
     grid-column: 2 / 4;
+    grid-row: 3;
   }
 
   .footer {
@@ -320,8 +321,8 @@
   }
 
   .footer .title {
-    justify-self: center;
     left: 0;
+    justify-self: center;
   }
 }
 

@@ -1,11 +1,11 @@
 :root.theme-dark {
   --background-image: url(../images/cover-image-dark.png);
-  
+
   --background-color: #000028;
   --accent-color: #ff0070;
   --decor-color: var(--accent-color);
   --accent-color-hover: rgba(255, 0, 112, 0.4);
- --title-color: #db00ff;
+  --title-color: #db00ff;
   --section-title-color: var(--accent-color);
   --title-decor-color: var(--background-color);
   --card-text-color: #f1b2ce;
