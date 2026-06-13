@@ -54,6 +54,7 @@
 
 .header__theme-menu-button_active {
   border: 1px solid var(--decor-color);
+  pointer-events: none;
 }
 
 .header__lamp-text {
@@ -226,10 +227,6 @@
 
 .theme-light .header__lamp-text {
   display: none;
-}
-
-.header__theme-menu-button_active {
-  pointer-events: none;
 }
 
 @media (min-width: 768px) {
