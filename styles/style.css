@@ -52,6 +52,10 @@
   outline: none;
 }
 
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
 .header__theme-menu-button_active {
   border: 1px solid var(--decor-color);
   pointer-events: none;
@@ -114,7 +118,6 @@
 }
 
 .title-decor {
-  height: 117px;
   color: var(--title-decor-color);
   font-family: var(--main-font-family);
   font-weight: var(--bold-font-weight);
@@ -159,16 +162,16 @@
   outline: none;
 }
 
+.link:focus {
+  outline: none;
+}
+
 .section__title {
   color: var(--section-title-color);
   font-family: var(--main-font-family);
   font-weight: var(--bold-font-weight);
   font-size: var(--main-font-size);
   line-height: var(--title-line-height);
-}
-
-.card__title {
-  height: 23px;
 }
 
 .card__subtitle {
@@ -181,10 +184,6 @@
   font-weight: var(--regular-font-weight);
   font-size: var(--main-font-size);
   line-height: var(--title-line-height);
-}
-
-.text-blocks > h3 {
-  min-height: 47px;
 }
 
 .text-blocks {
@@ -274,10 +273,6 @@
     grid-column: 1 / -1;
   }
 
-  .text-blocks > h3 {
-    min-height: 23px;
-  }
-
   .section__images .title-decor,
   .section__images .gallery {
     grid-column: 1 / -1;
@@ -341,7 +336,6 @@
 
   .header .title-decor {
     max-width: 491px;
-    max-height: 70px;
   }
 
   .reasons {
